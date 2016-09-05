@@ -1,0 +1,307 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #ECDFBD;
+  background: #2d2b30;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #FFD464;
+}
+
+a:hover {
+  color: #F0F1EE;
+}
+
+
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.link:hover {
+  background: #FB6648;
+  border-radius: 5px;
+  padding-bottom: 0;
+}
+
+.link:hover a{
+  color: #2d2b30;
+} 
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px;
+}
+
+.bname {
+  color: #333333;
+  font-size: 1.9em;
+  font-weight: bold;
+  font-family: 'Arimo', sans-serif;
+}
+
+.btag {
+  font-size: 1.3em;
+   margin: 0;
+   color: #781126;
+}
+
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+header .name{
+  font-size: 3em;
+}
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 0 40px 0;
+  text-align: left;
+  border-top: 4px solid #BCCF3D;
+  clear: both;
+}
+.card:hover {
+  border-color: #ECDFBD;
+}
+
+
+.photo{
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+.information{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FB6648;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.buy {
+  background: #FB6648;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 1s;
+  color: #000; 
+}
+
+.buy:hover{
+  background: #fc9682;
+  color: #000;
+}
+
+.txt {
+  margin-bottom: 45px;
+}
+
+.text {
+  text-align: left;
+}
+
+/* Footer styles */
+
+footer {
+  text-align: center;
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+
+
+@media screen and (min-width: 640px) {
+
+header {
+  font-size: 2em;
+  letter-spacing: 5px;
+
+}
+
+
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .bname {
+    font-size: 2.8em;
+  }
+
+  .btag {
+    font-size: 1.3em;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .card{
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 250px;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+    width: 610px;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}

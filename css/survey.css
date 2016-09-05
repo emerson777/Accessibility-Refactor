@@ -1,0 +1,195 @@
+/* Survey page styles */
+
+main {
+  margin-top: 25px;
+}
+
+.card {
+ margin: 0 auto;
+}
+
+.photo {
+  width: 90%;
+  height: auto;
+  padding-top: 20px; 
+  border-radius: 5px;
+}
+
+fieldset {
+  border-style: outset;
+  border-radius: 4px;
+  width: 95%;
+  margin: 15px auto;
+
+}
+
+
+.survey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  
+} 
+
+legend {
+  color: #ECDFBD;
+}
+
+.mbers {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+
+input[type="radio"] {
+   width: 25%;   
+   margin-left: 0;
+   margin-top: 15px;
+}
+
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 17px;
+  height: 33px;
+  border-radius: 3px;
+}
+
+
+select {
+  height: 33px;
+  margin-bottom: 10px;
+}
+
+
+#albums:focus,
+textarea:focus,
+#name:focus,
+#email:focus,
+#repeatemail:focus {
+    transition: background 0.9s ease;
+    background: #ECDFBD;
+    outline: none !important;
+        box-shadow: 0 0 9px #FFD464;
+}
+
+
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.container{
+  text-align: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+
+.sub {
+  width: 90%;
+  height: 40px;
+  align-self: center;
+  background: #FB6648;
+  color: #2d2b30;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.sub:hover {
+  background: #fc9682;
+}
+
+
+#yname,
+#mail, 
+#remail,
+#singup {
+  display: none;
+}
+
+
+/* Styles for larger screens */
+
+
+
+@media screen and (min-width: 768px) {
+
+
+.photo {
+  width: 80%;
+}
+.card {
+  width: 90%;
+}
+
+fieldset {
+  width: 90%;
+}
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub {
+  width: 200px;
+}
+
+.mbers {
+  flex-direction: row;
+  margin-bottom: 20px;
+} 
+
+select {
+  margin-bottom: 20px;
+}
+
+
+}
+@media screen and (min-width: 840px) {
+  .photo{
+     width: 400px;
+    height: 285px;
+
+  }
+
+  fieldset {
+  width: 540px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+}

@@ -1,0 +1,187 @@
+/* Tour page styles */
+
+.tour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+     justify-content: center;
+	padding: 0;
+}
+
+
+
+
+.tdates::before { 
+	background-image: url('../img/guitar_pick.png');
+	background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+    margin-right: 10px;
+}
+
+
+.tdates::after { 
+	background-image: url('../img/guitar_pick.png');
+	background-size: 40px 40px;
+	display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+    margin-left: 10px;
+}
+
+table {
+	margin: 1em 0;
+    min-width: 300px; 
+    background: #781125;
+    color: #FFD883;
+    border-radius: 5px;
+}
+
+td {
+    display: block; 
+
+ }
+
+tr {
+	border: 1px solid #fff;
+}
+
+th {
+    display: none;  
+}
+
+td:first-child {
+	  padding-top: .5em;
+}  
+
+
+td:last-child {
+	  padding-bottom: .5em;
+} 
+
+td:before {
+	  color: #EDEDEA;
+    font-weight: bold;
+    width: 8.5em;
+    display: inline-block;
+}
+
+
+td:nth-of-type(1):before {
+ content: "Date :";
+}
+
+td:nth-of-type(2):before {
+ content: "Venue :";
+}
+
+td:nth-of-type(3):before {
+ content: "Location :";
+}
+
+
+th, td {
+    text-align: left;
+}
+    
+@media screen and (min-width: 480px) {
+
+table {
+	width: 400px;
+
+}
+
+td:first-child {
+	  padding-top: 1em;
+}  
+td:before {
+	padding-left: 15px;
+	padding-right: 45px;
+}
+
+} 
+
+
+
+@media screen and (min-width: 768px) {
+
+
+caption {
+	margin-bottom: 40px;
+	font-size: 1.3em;
+}
+
+table { 
+  border-collapse: collapse; 
+  width: 600px;
+  background: #E9E0D6;
+  color: #333333;
+}
+
+th {
+	font-size: 1.3em;
+	padding: 6px 6px 6px 10px;
+	background: #781125; 
+  color: #EDEDEA; 
+  font-weight: bold; 
+}
+
+.thd {
+  background: #E9E0D6;
+  color: #333333;
+  font-weight: normal; 
+  border: 1px solid #ccc;
+}
+
+
+td,
+th {
+	display: table-cell;
+}
+
+
+td {
+	 font-size: 1.2em;
+	 text-align: left;
+	 padding-left: 10px; 
+	 padding-top: 6px;
+	 padding-bottom: 6px;
+	 border: 1px solid #ccc; 
+}
+
+td:nth-of-type(1) {
+	padding-top: 1px;	
+}
+
+
+td:nth-of-type(1):before,
+td:nth-of-type(2):before,
+td:nth-of-type(3):before  {
+ display: none;
+}
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+
+table { 
+   width: 800px;
+}
+
+
+}
+
+
+
+
