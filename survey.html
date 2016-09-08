@@ -30,10 +30,11 @@
         <div class="flex">
           <img class="photo" src="img/concert01.jpg" alt="concert crowd">
 
-        <fieldset>
-          <legend>Survey</legend>
+       
           <div class="container">
-            <form class = "survey">
+            <form class ="survey">
+             <fieldset>
+              <legend>Survey</legend>
               <p>Who is your favorite band member:</p>
               <div class="mbers">
               <label for="John"><input type="radio" id="John" name="res" value="John">John</label> 
@@ -65,9 +66,10 @@
 
               <label for="favsong">What is your favorite song:</label>
               <textarea id="favsong" name="favsongtext"></textarea>
+             </fieldset>
             </form>
           </div>
-          </fieldset>
+         
         </div>
       </div>
       <h1 class= "heading">Newsletter</h1>
@@ -75,10 +77,11 @@
         <div class="flex">
           <img class="photo" src="img/the_band.jpg" alt="band on stage">
 
-          <fieldset>
-           <legend>Newsletter</legend>
+        
             <div class="container">
               <form class="newsletter">
+                <fieldset>
+                  <legend>Newsletter</legend>
                   <label for="name">Name:</label>
                      <input type ="text" id="name" name="textfield" aria-describedby="yname">
                      <p id="yname">Please type your name.</p>
@@ -93,9 +96,9 @@
 
                   <button type="submit" class="sub" aria-describedby="singup">Sign Up</button>
                   <p id="singup">By submitting this form, you agree to receive a monthly newsletter.</p>
+                </fieldset>
               </form>
             </div>
-            </fieldset>
         </div>
       </div>
     </main>
